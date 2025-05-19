@@ -1,7 +1,6 @@
-update(): Updates the dictionary with the key-value pairs from another dictionary or iterable of key-value pairs.
+remove(element): Removes an element from the set. Raises a KeyError if the element is not present.
 Example
-my_dict = {"a": 1, "b": 2}
-my_dict.update({"c": 3, "d": 4})
-print(my_dict) # Output: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
-my_dict.update([("e", 5), ("f", 6)]) # Using a list of tuples
-print(my_dict) # Output: {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6}
+my_set = {1, 2, 3, 4}
+my_set.remove(3)
+print(my_set) # Output: {1, 2, 4}
+#my_set.remove(5) # This line would raise a KeyError
